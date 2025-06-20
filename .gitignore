@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/xcode/
+.swiftpm/cache/
+.swiftpm/indices/
+
+# Xcode
+DerivedData/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+
+# Build Products
+*.app
+*.dSYM
+*.xcarchive
+*.ipa
+*.dmg
+*.pkg
+build/
+
+# Dependency Managers
+Carthage/
+Pods/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Misc
+.idea/
+.vscode/ 
