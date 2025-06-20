@@ -5,7 +5,7 @@ struct PreferencesView: View {
 	
 	var body: some View {
 		Form {
-			Stepper(value: $interval, in: 5...600, step: 5) {
+			Stepper(value: $interval, in: 30...600, step: 5) {
 				Text("Refresh every \(Int(interval)) s")
 			}
 		}

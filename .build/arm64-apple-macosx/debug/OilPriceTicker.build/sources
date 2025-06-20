@@ -1,9 +1,0 @@
-/Users/afxjzs/dev/projects/oil-price-ticker/Sources/OilPriceTicker/AppDelegate.swift
-/Users/afxjzs/dev/projects/oil-price-ticker/Sources/OilPriceTicker/BarchartPriceFetcher.swift
-/Users/afxjzs/dev/projects/oil-price-ticker/Sources/OilPriceTicker/BarchartScrapeFetcher.swift
-/Users/afxjzs/dev/projects/oil-price-ticker/Sources/OilPriceTicker/EIAJsonPriceFetcher.swift
-/Users/afxjzs/dev/projects/oil-price-ticker/Sources/OilPriceTicker/EIAPriceFetcher.swift
-/Users/afxjzs/dev/projects/oil-price-ticker/Sources/OilPriceTicker/OilPriceTickerApp.swift
-/Users/afxjzs/dev/projects/oil-price-ticker/Sources/OilPriceTicker/PreferencesView.swift
-/Users/afxjzs/dev/projects/oil-price-ticker/Sources/OilPriceTicker/StooqPriceFetcher.swift
-/Users/afxjzs/dev/projects/oil-price-ticker/Sources/OilPriceTicker/YahooPriceFetcher.swift

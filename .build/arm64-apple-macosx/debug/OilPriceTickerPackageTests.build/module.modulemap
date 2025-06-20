@@ -1,4 +1,0 @@
-module OilPriceTickerPackageTests {
-    header "/Users/afxjzs/dev/projects/oil-price-ticker/.build/arm64-apple-macosx/debug/OilPriceTickerPackageTests.build/OilPriceTickerPackageTests-Swift.h"
-    requires objc
-}

@@ -1,6 +1,7 @@
 import Cocoa
 import Combine
 import OSLog
+import SwiftUI
 
 final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	private var statusItem: NSStatusItem!
@@ -9,15 +10,15 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "OilPriceTicker", category: "App")
 	private var subscriptions = Set<AnyCancellable>()
 	private let statusMenu = NSMenu()
+	private var prefsWindow: NSWindow?
 	
 	func applicationDidFinishLaunching(_ notification: Notification) {
 		statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 		statusItem.button?.font = .monospacedDigitSystemFont(ofSize: 13, weight: .regular)
 		
 		// Set barrel emoji as icon image
-		statusItem.button?.image = Self.emojiImage("🛢️")
-		statusItem.button?.imagePosition = .imageLeft
-		statusItem.button?.title = " ––.–" // leading space to separate icon and price
+		statusItem.button?.image = nil
+		statusItem.button?.title = "🛢️ ––.–"
 		
 		startUpdating()
 		logger.debug("Application launched, starting updates")
@@ -52,10 +53,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 			.sink { [weak self] price in
 				guard let self, let button = self.statusItem.button else { return }
 				if let price {
-					button.title = String(format: " $%.2f", price)
+					button.title = String(format: "🛢️ $%.2f", price)
 					logger.debug("Updated UI with price: \(price)")
 				} else {
-					button.title = " ––.–"
+					button.title = "🛢️ ––.–"
 					logger.error("Price nil; UI shows placeholder")
 				}
 			}
@@ -66,6 +67,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	private func setupMenu() {
 		statusMenu.autoenablesItems = false
 		statusMenu.delegate = self
+		statusMenu.addItem(NSMenuItem(title: "Preferences…", action: #selector(showPreferences), keyEquivalent: ","))
+		statusMenu.addItem(NSMenuItem.separator())
 		statusMenu.addItem(NSMenuItem(title: "About OilPriceTicker", action: #selector(showAbout), keyEquivalent: ""))
 		statusMenu.addItem(NSMenuItem.separator())
 		statusMenu.addItem(NSMenuItem(title: "Quit", action: #selector(quitApp), keyEquivalent: "q"))
@@ -91,6 +94,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 		linkField.isSelectable = true
 		alert.accessoryView = linkField
 		alert.addButton(withTitle: "OK")
+		alert.icon = Self.emojiImage("🛢️")
 		alert.runModal()
 	}
 	
@@ -106,6 +110,22 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	
 	@objc private func quitApp() {
 		NSApp.terminate(nil)
+	}
+	
+	@objc private func showPreferences() {
+		if prefsWindow == nil {
+			let hosting = NSHostingController(rootView: PreferencesView())
+			let window = NSWindow(contentViewController: hosting)
+			window.title = "Preferences"
+			window.styleMask = [.titled, .closable]
+			window.isReleasedWhenClosed = false
+			window.setContentSize(NSSize(width: 320, height: 120))
+			window.center()
+			prefsWindow = window
+		}
+		prefsWindow?.makeKeyAndOrderFront(nil)
+		prefsWindow?.orderFrontRegardless()
+		NSApp.activate(ignoringOtherApps: true)
 	}
 	
 	// Create NSImage from emoji string

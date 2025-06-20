@@ -1,4 +1,0 @@
-module SwiftSoup {
-    header "/Users/afxjzs/dev/projects/oil-price-ticker/.build/arm64-apple-macosx/debug/SwiftSoup.build/SwiftSoup-Swift.h"
-    requires objc
-}
