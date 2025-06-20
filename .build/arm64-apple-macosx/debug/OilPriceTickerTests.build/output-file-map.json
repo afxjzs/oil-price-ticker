@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/afxjzs/dev/projects/oil-price-ticker/.build/arm64-apple-macosx/debug/OilPriceTickerTests.build/master.swiftdeps"
+  },
+  "/Users/afxjzs/dev/projects/oil-price-ticker/Tests/OilPriceTickerTests/OilPriceTickerTests.swift": {
+    "dependencies": "/Users/afxjzs/dev/projects/oil-price-ticker/.build/arm64-apple-macosx/debug/OilPriceTickerTests.build/OilPriceTickerTests.d",
+    "object": "/Users/afxjzs/dev/projects/oil-price-ticker/.build/arm64-apple-macosx/debug/OilPriceTickerTests.build/OilPriceTickerTests.swift.o",
+    "swiftmodule": "/Users/afxjzs/dev/projects/oil-price-ticker/.build/arm64-apple-macosx/debug/OilPriceTickerTests.build/OilPriceTickerTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/afxjzs/dev/projects/oil-price-ticker/.build/arm64-apple-macosx/debug/OilPriceTickerTests.build/OilPriceTickerTests.swiftdeps"
+  }
+}
