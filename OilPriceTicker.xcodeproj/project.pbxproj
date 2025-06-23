@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		CDAE74422E09FB7C00812E89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDAE742B2E09FB7B00812E89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDAE74322E09FB7B00812E89;
+			remoteInfo = OilPriceTicker;
+		};
+		CDAE744C2E09FB7C00812E89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDAE742B2E09FB7B00812E89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDAE74322E09FB7B00812E89;
+			remoteInfo = OilPriceTicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDAE74332E09FB7B00812E89 /* OilPriceTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OilPriceTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDAE74412E09FB7C00812E89 /* OilPriceTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OilPriceTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDAE744B2E09FB7C00812E89 /* OilPriceTickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OilPriceTickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CDAE74352E09FB7B00812E89 /* OilPriceTicker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = OilPriceTicker;
+			sourceTree = "<group>";
+		};
+		CDAE74442E09FB7C00812E89 /* OilPriceTickerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = OilPriceTickerTests;
+			sourceTree = "<group>";
+		};
+		CDAE744E2E09FB7C00812E89 /* OilPriceTickerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = OilPriceTickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDAE74302E09FB7B00812E89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDAE743E2E09FB7C00812E89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDAE74482E09FB7C00812E89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDAE742A2E09FB7B00812E89 = {
+			isa = PBXGroup;
+			children = (
+				CDAE74352E09FB7B00812E89 /* OilPriceTicker */,
+				CDAE74442E09FB7C00812E89 /* OilPriceTickerTests */,
+				CDAE744E2E09FB7C00812E89 /* OilPriceTickerUITests */,
+				CDAE74342E09FB7B00812E89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDAE74342E09FB7B00812E89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDAE74332E09FB7B00812E89 /* OilPriceTicker.app */,
+				CDAE74412E09FB7C00812E89 /* OilPriceTickerTests.xctest */,
+				CDAE744B2E09FB7C00812E89 /* OilPriceTickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDAE74322E09FB7B00812E89 /* OilPriceTicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDAE74552E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTicker" */;
+			buildPhases = (
+				CDAE742F2E09FB7B00812E89 /* Sources */,
+				CDAE74302E09FB7B00812E89 /* Frameworks */,
+				CDAE74312E09FB7B00812E89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CDAE74352E09FB7B00812E89 /* OilPriceTicker */,
+			);
+			name = OilPriceTicker;
+			packageProductDependencies = (
+			);
+			productName = OilPriceTicker;
+			productReference = CDAE74332E09FB7B00812E89 /* OilPriceTicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDAE74402E09FB7C00812E89 /* OilPriceTickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDAE74582E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerTests" */;
+			buildPhases = (
+				CDAE743D2E09FB7C00812E89 /* Sources */,
+				CDAE743E2E09FB7C00812E89 /* Frameworks */,
+				CDAE743F2E09FB7C00812E89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDAE74432E09FB7C00812E89 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CDAE74442E09FB7C00812E89 /* OilPriceTickerTests */,
+			);
+			name = OilPriceTickerTests;
+			packageProductDependencies = (
+			);
+			productName = OilPriceTickerTests;
+			productReference = CDAE74412E09FB7C00812E89 /* OilPriceTickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDAE744A2E09FB7C00812E89 /* OilPriceTickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDAE745B2E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerUITests" */;
+			buildPhases = (
+				CDAE74472E09FB7C00812E89 /* Sources */,
+				CDAE74482E09FB7C00812E89 /* Frameworks */,
+				CDAE74492E09FB7C00812E89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDAE744D2E09FB7C00812E89 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CDAE744E2E09FB7C00812E89 /* OilPriceTickerUITests */,
+			);
+			name = OilPriceTickerUITests;
+			packageProductDependencies = (
+			);
+			productName = OilPriceTickerUITests;
+			productReference = CDAE744B2E09FB7C00812E89 /* OilPriceTickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDAE742B2E09FB7B00812E89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					CDAE74322E09FB7B00812E89 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					CDAE74402E09FB7C00812E89 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = CDAE74322E09FB7B00812E89;
+					};
+					CDAE744A2E09FB7C00812E89 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = CDAE74322E09FB7B00812E89;
+					};
+				};
+			};
+			buildConfigurationList = CDAE742E2E09FB7B00812E89 /* Build configuration list for PBXProject "OilPriceTicker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDAE742A2E09FB7B00812E89;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CDAE74342E09FB7B00812E89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDAE74322E09FB7B00812E89 /* OilPriceTicker */,
+				CDAE74402E09FB7C00812E89 /* OilPriceTickerTests */,
+				CDAE744A2E09FB7C00812E89 /* OilPriceTickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDAE74312E09FB7B00812E89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDAE743F2E09FB7C00812E89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDAE74492E09FB7C00812E89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDAE742F2E09FB7B00812E89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDAE743D2E09FB7C00812E89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDAE74472E09FB7C00812E89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDAE74432E09FB7C00812E89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDAE74322E09FB7B00812E89 /* OilPriceTicker */;
+			targetProxy = CDAE74422E09FB7C00812E89 /* PBXContainerItemProxy */;
+		};
+		CDAE744D2E09FB7C00812E89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDAE74322E09FB7B00812E89 /* OilPriceTicker */;
+			targetProxy = CDAE744C2E09FB7C00812E89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CDAE74532E09FB7C00812E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2432P837P3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDAE74542E09FB7C00812E89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2432P837P3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CDAE74562E09FB7C00812E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OilPriceTicker/OilPriceTicker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2432P837P3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technifly.OilPriceTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CDAE74572E09FB7C00812E89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OilPriceTicker/OilPriceTicker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2432P837P3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technifly.OilPriceTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CDAE74592E09FB7C00812E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2432P837P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technifly.OilPriceTickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OilPriceTicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OilPriceTicker";
+			};
+			name = Debug;
+		};
+		CDAE745A2E09FB7C00812E89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2432P837P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technifly.OilPriceTickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OilPriceTicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OilPriceTicker";
+			};
+			name = Release;
+		};
+		CDAE745C2E09FB7C00812E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2432P837P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technifly.OilPriceTickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = OilPriceTicker;
+			};
+			name = Debug;
+		};
+		CDAE745D2E09FB7C00812E89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2432P837P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technifly.OilPriceTickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = OilPriceTicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDAE742E2E09FB7B00812E89 /* Build configuration list for PBXProject "OilPriceTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDAE74532E09FB7C00812E89 /* Debug */,
+				CDAE74542E09FB7C00812E89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDAE74552E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDAE74562E09FB7C00812E89 /* Debug */,
+				CDAE74572E09FB7C00812E89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDAE74582E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDAE74592E09FB7C00812E89 /* Debug */,
+				CDAE745A2E09FB7C00812E89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDAE745B2E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDAE745C2E09FB7C00812E89 /* Debug */,
+				CDAE745D2E09FB7C00812E89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDAE742B2E09FB7B00812E89 /* Project object */;
+}
