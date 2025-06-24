@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CDB056DF2E0A0D1C006294B0 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = CDB056DE2E0A0D1C006294B0 /* SwiftSoup */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CDAE74422E09FB7C00812E89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CDAE74332E09FB7B00812E89 /* OilPriceTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OilPriceTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDAE74412E09FB7C00812E89 /* OilPriceTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OilPriceTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDAE744B2E09FB7C00812E89 /* OilPriceTickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OilPriceTickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDAE74332E09FB7B00812E89 /* OilPriceTickerMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OilPriceTickerMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDAE74412E09FB7C00812E89 /* OilPriceTickerMacAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OilPriceTickerMacAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDAE744B2E09FB7C00812E89 /* OilPriceTickerMacAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OilPriceTickerMacAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB056DF2E0A0D1C006294B0 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +90,9 @@
 		CDAE74342E09FB7B00812E89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CDAE74332E09FB7B00812E89 /* OilPriceTicker.app */,
-				CDAE74412E09FB7C00812E89 /* OilPriceTickerTests.xctest */,
-				CDAE744B2E09FB7C00812E89 /* OilPriceTickerUITests.xctest */,
+				CDAE74332E09FB7B00812E89 /* OilPriceTickerMacApp.app */,
+				CDAE74412E09FB7C00812E89 /* OilPriceTickerMacAppTests.xctest */,
+				CDAE744B2E09FB7C00812E89 /* OilPriceTickerMacAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CDAE74322E09FB7B00812E89 /* OilPriceTicker */ = {
+		CDAE74322E09FB7B00812E89 /* OilPriceTickerMacApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDAE74552E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTicker" */;
+			buildConfigurationList = CDAE74552E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerMacApp" */;
 			buildPhases = (
 				CDAE742F2E09FB7B00812E89 /* Sources */,
 				CDAE74302E09FB7B00812E89 /* Frameworks */,
@@ -110,16 +115,17 @@
 			fileSystemSynchronizedGroups = (
 				CDAE74352E09FB7B00812E89 /* OilPriceTicker */,
 			);
-			name = OilPriceTicker;
+			name = OilPriceTickerMacApp;
 			packageProductDependencies = (
+				CDB056DE2E0A0D1C006294B0 /* SwiftSoup */,
 			);
 			productName = OilPriceTicker;
-			productReference = CDAE74332E09FB7B00812E89 /* OilPriceTicker.app */;
+			productReference = CDAE74332E09FB7B00812E89 /* OilPriceTickerMacApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CDAE74402E09FB7C00812E89 /* OilPriceTickerTests */ = {
+		CDAE74402E09FB7C00812E89 /* OilPriceTickerMacAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDAE74582E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerTests" */;
+			buildConfigurationList = CDAE74582E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerMacAppTests" */;
 			buildPhases = (
 				CDAE743D2E09FB7C00812E89 /* Sources */,
 				CDAE743E2E09FB7C00812E89 /* Frameworks */,
@@ -133,16 +139,16 @@
 			fileSystemSynchronizedGroups = (
 				CDAE74442E09FB7C00812E89 /* OilPriceTickerTests */,
 			);
-			name = OilPriceTickerTests;
+			name = OilPriceTickerMacAppTests;
 			packageProductDependencies = (
 			);
 			productName = OilPriceTickerTests;
-			productReference = CDAE74412E09FB7C00812E89 /* OilPriceTickerTests.xctest */;
+			productReference = CDAE74412E09FB7C00812E89 /* OilPriceTickerMacAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CDAE744A2E09FB7C00812E89 /* OilPriceTickerUITests */ = {
+		CDAE744A2E09FB7C00812E89 /* OilPriceTickerMacAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDAE745B2E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerUITests" */;
+			buildConfigurationList = CDAE745B2E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerMacAppUITests" */;
 			buildPhases = (
 				CDAE74472E09FB7C00812E89 /* Sources */,
 				CDAE74482E09FB7C00812E89 /* Frameworks */,
@@ -156,11 +162,11 @@
 			fileSystemSynchronizedGroups = (
 				CDAE744E2E09FB7C00812E89 /* OilPriceTickerUITests */,
 			);
-			name = OilPriceTickerUITests;
+			name = OilPriceTickerMacAppUITests;
 			packageProductDependencies = (
 			);
 			productName = OilPriceTickerUITests;
-			productReference = CDAE744B2E09FB7C00812E89 /* OilPriceTickerUITests.xctest */;
+			productReference = CDAE744B2E09FB7C00812E89 /* OilPriceTickerMacAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CDAE742E2E09FB7B00812E89 /* Build configuration list for PBXProject "OilPriceTicker" */;
+			buildConfigurationList = CDAE742E2E09FB7B00812E89 /* Build configuration list for PBXProject "OilPriceTickerMacApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,14 +201,17 @@
 			);
 			mainGroup = CDAE742A2E09FB7B00812E89;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CDB056DD2E0A0D1C006294B0 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CDAE74342E09FB7B00812E89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CDAE74322E09FB7B00812E89 /* OilPriceTicker */,
-				CDAE74402E09FB7C00812E89 /* OilPriceTickerTests */,
-				CDAE744A2E09FB7C00812E89 /* OilPriceTickerUITests */,
+				CDAE74322E09FB7B00812E89 /* OilPriceTickerMacApp */,
+				CDAE74402E09FB7C00812E89 /* OilPriceTickerMacAppTests */,
+				CDAE744A2E09FB7C00812E89 /* OilPriceTickerMacAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +267,12 @@
 /* Begin PBXTargetDependency section */
 		CDAE74432E09FB7C00812E89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CDAE74322E09FB7B00812E89 /* OilPriceTicker */;
+			target = CDAE74322E09FB7B00812E89 /* OilPriceTickerMacApp */;
 			targetProxy = CDAE74422E09FB7C00812E89 /* PBXContainerItemProxy */;
 		};
 		CDAE744D2E09FB7C00812E89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CDAE74322E09FB7B00812E89 /* OilPriceTicker */;
+			target = CDAE74322E09FB7B00812E89 /* OilPriceTickerMacApp */;
 			targetProxy = CDAE744C2E09FB7C00812E89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -394,22 +403,29 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = OilPriceTicker/OilPriceTicker.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2432P837P3;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 2432P837P3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Oil Price Ticker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.technifly.OilPriceTicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -421,22 +437,29 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = OilPriceTicker/OilPriceTicker.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2432P837P3;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 2432P837P3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Oil Price Ticker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.technifly.OilPriceTicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -457,7 +480,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OilPriceTicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OilPriceTicker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OilPriceTickerMacApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OilPriceTickerMacApp";
 			};
 			name = Debug;
 		};
@@ -475,7 +498,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OilPriceTicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OilPriceTicker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OilPriceTickerMacApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OilPriceTickerMacApp";
 			};
 			name = Release;
 		};
@@ -514,7 +537,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CDAE742E2E09FB7B00812E89 /* Build configuration list for PBXProject "OilPriceTicker" */ = {
+		CDAE742E2E09FB7B00812E89 /* Build configuration list for PBXProject "OilPriceTickerMacApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CDAE74532E09FB7C00812E89 /* Debug */,
@@ -523,7 +546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDAE74552E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTicker" */ = {
+		CDAE74552E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerMacApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CDAE74562E09FB7C00812E89 /* Debug */,
@@ -532,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDAE74582E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerTests" */ = {
+		CDAE74582E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerMacAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CDAE74592E09FB7C00812E89 /* Debug */,
@@ -541,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDAE745B2E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerUITests" */ = {
+		CDAE745B2E09FB7C00812E89 /* Build configuration list for PBXNativeTarget "OilPriceTickerMacAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CDAE745C2E09FB7C00812E89 /* Debug */,
@@ -551,6 +574,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDB056DD2E0A0D1C006294B0 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDB056DE2E0A0D1C006294B0 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDB056DD2E0A0D1C006294B0 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CDAE742B2E09FB7B00812E89 /* Project object */;
 }

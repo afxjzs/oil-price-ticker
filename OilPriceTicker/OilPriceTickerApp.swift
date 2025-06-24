@@ -1,3 +1,4 @@
+//OilPriceTicker/OilPriceTickerApp.swift
 //
 //  OilPriceTickerApp.swift
 //  OilPriceTicker
@@ -8,10 +9,8 @@
 import SwiftUI
 
 @main
-struct OilPriceTickerApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+struct OilPriceTickerShellApp: App {
+	var body: some Scene {
+		OilPriceTickerEntry().body
+	}
 }
