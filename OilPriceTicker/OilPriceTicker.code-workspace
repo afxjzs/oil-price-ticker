@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../oil-price-ticker"
+		}
+	],
+	"settings": {}
+}

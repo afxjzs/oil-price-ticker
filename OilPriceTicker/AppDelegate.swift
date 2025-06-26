@@ -13,6 +13,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	private var prefsWindow: NSWindow?
 	
 	func applicationDidFinishLaunching(_ notification: Notification) {
+		NSApp.setActivationPolicy(.accessory)
 		statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 		statusItem.button?.font = .monospacedDigitSystemFont(ofSize: 13, weight: .regular)
 		statusItem.button?.title = "🛢️ ––.–"

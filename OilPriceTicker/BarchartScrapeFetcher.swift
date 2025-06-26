@@ -6,7 +6,7 @@ import SwiftSoup
 
 struct BarchartScrapeFetcher {
 	private static let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "OilPriceTicker", category: "BarchartScrape")
-	private let url = URL(string: "https://www.barchart.com/futures/quotes/CLN25")!
+	private let url = URL(string: "https://www.barchart.com/futures/quotes/CL*0")!
 	func fetchPrice() -> AnyPublisher<Double?, Never> {
 		URLSession.shared.dataTaskPublisher(for: url)
 			.tryMap { data, _ in
