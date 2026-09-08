@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CDB056DF2E0A0D1C006294B0 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = CDB056DE2E0A0D1C006294B0 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB056DF2E0A0D1C006294B0 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +115,6 @@
 			);
 			name = OilPriceTickerMacApp;
 			packageProductDependencies = (
-				CDB056DE2E0A0D1C006294B0 /* SwiftSoup */,
 			);
 			productName = OilPriceTicker;
 			productReference = CDAE74332E09FB7B00812E89 /* OilPriceTickerMacApp.app */;
@@ -202,7 +199,6 @@
 			mainGroup = CDAE742A2E09FB7B00812E89;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				CDB056DD2E0A0D1C006294B0 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CDAE74342E09FB7B00812E89 /* Products */;
@@ -574,25 +570,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CDB056DD2E0A0D1C006294B0 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.8.8;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CDB056DE2E0A0D1C006294B0 /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CDB056DD2E0A0D1C006294B0 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CDAE742B2E09FB7B00812E89 /* Project object */;
 }
