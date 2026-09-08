@@ -6,7 +6,7 @@
 //
 
 import Testing
-@testable import OilPriceTicker
+@testable import OilPriceTickerMacApp
 
 struct OilPriceTickerTests {
 
