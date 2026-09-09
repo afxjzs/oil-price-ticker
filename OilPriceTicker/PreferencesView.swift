@@ -2,13 +2,21 @@
 import SwiftUI
 
 struct PreferencesView: View {
-	@AppStorage("interval") private var interval: Double = 60
-	
+	@AppStorage("interval") private var interval: Double = RefreshInterval.default
+
 	var body: some View {
 		VStack(alignment: .leading, spacing: 16) {
 			Form {
-				Stepper(value: $interval, in: 30...600, step: 5) {
-					Text("Refresh every \(Int(interval)) s")
+				Picker("Refresh every", selection: $interval) {
+					// A value carried over from an older build may not be one of
+					// the presets. Offer it as its own row rather than silently
+					// snapping it to a neighbour or leaving the Picker blank.
+					if !RefreshInterval.presets.contains(interval) {
+						Text(RefreshInterval.label(for: interval)).tag(interval)
+					}
+					ForEach(RefreshInterval.presets, id: \.self) { seconds in
+						Text(RefreshInterval.label(for: seconds)).tag(seconds)
+					}
 				}
 			}
 			

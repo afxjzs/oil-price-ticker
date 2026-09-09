@@ -47,11 +47,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	/// User's configured gap between polls, in seconds.
 	private var baseInterval: TimeInterval {
 		let stored = UserDefaults.standard.double(forKey: "interval")
-		return stored == 0 ? 60 : stored
+		return stored == 0 ? RefreshInterval.default : stored
 	}
 
-	/// Never back off further than this, so the ticker always recovers on its own.
-	private static let maxBackoff: TimeInterval = 15 * 60
+	/// Backoff ceiling, as a multiple of the configured interval.
+	///
+	/// Deliberately relative rather than a fixed number of minutes: a flat cap
+	/// silently stops backing off once the user's interval reaches it, which
+	/// looks identical to backoff working. Four doublings still recovers on its
+	/// own without hammering a source that is rate limiting us.
+	private static let maxBackoffMultiplier: Double = 4
 
 	private var consecutiveFailures = 0
 	private var refreshTimer: Timer?
@@ -67,7 +72,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 	private func nextDelay() -> TimeInterval {
 		guard consecutiveFailures > 0 else { return baseInterval }
 		let scaled = baseInterval * pow(2, Double(consecutiveFailures))
-		return min(scaled, Self.maxBackoff)
+		return min(scaled, baseInterval * Self.maxBackoffMultiplier)
 	}
 
 	private func scheduleNextFetch() {
