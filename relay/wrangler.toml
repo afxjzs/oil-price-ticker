@@ -1,0 +1,14 @@
+name = "wti"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# Every 5 minutes: 288 runs and 288 KV writes a day, inside the free plan's 1,000 writes/day.
+[triggers]
+crons = ["*/5 * * * *"]
+
+[[kv_namespaces]]
+binding = "QUOTES"
+id = "4e50186ccb6d472fa04f4058bd685b63"
+
+[observability]
+enabled = true
