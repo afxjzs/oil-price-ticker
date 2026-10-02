@@ -118,9 +118,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 		guard let button = statusItem.button else { return }
 
 		if let quote = lastQuote {
-			let stale = lastError != nil
-			// A retained price is visibly flagged. Showing yesterday's number as
-			// though it were live is the failure mode this marker exists to stop.
+			// A retained or outdated price is visibly flagged. Showing yesterday's
+			// number as though it were live is the failure mode this marker exists
+			// to stop. A failed fetch flags it, and so does a quote that stopped
+			// moving while the market is open, even if every fetch "succeeds".
+			let stale = lastError != nil || freshness(of: quote) == .stale
 			button.title = String(format: "🛢️ $%.2f%@", quote.price, stale ? " ⚠︎" : "")
 		} else {
 			button.title = Self.placeholder
@@ -139,7 +141,24 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 			return base + retrySuffix()
 		}
 		guard let quote = lastQuote else { return "Starting…" }
-		return "Live — \(quote.contract ?? "WTI front month")"
+		switch freshness(of: quote) {
+		case .live:
+			return "Live — \(quote.contract ?? "WTI front month")"
+		case .closed:
+			return "Market closed — price from \(Self.dateTimeFormatter.string(from: quotedAt(quote)))"
+		case .stale:
+			return "Stale — newest quote is from \(Self.dateTimeFormatter.string(from: quotedAt(quote)))"
+		}
+	}
+
+	/// When the price was quoted, falling back to when the relay fetched it for
+	/// sources that don't say.
+	private func quotedAt(_ quote: OilQuote) -> Date {
+		quote.quoteTime ?? quote.fetchedAt
+	}
+
+	private func freshness(of quote: OilQuote) -> Freshness {
+		Freshness.evaluate(quoteTime: quotedAt(quote), now: Date())
 	}
 
 	/// Says when the next attempt happens, so a long backoff is never mistaken
@@ -163,8 +182,21 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 			if let change = quote.changePercent {
 				lines.append(String(format: "Change: %+.2f%%", change))
 			}
-			lines.append("Source: \(quote.source)")
-			lines.append("Updated: \(Self.timeFormatter.string(from: quote.fetchedAt))")
+			lines.append("Source: \(quote.source), via the WTI relay")
+			if let quoteTime = quote.quoteTime {
+				lines.append("Quoted: \(Self.dateTimeFormatter.string(from: quoteTime))")
+			} else {
+				lines.append("Quoted: \(quote.source) gives no quote time")
+			}
+			lines.append("Fetched by relay: \(Self.dateTimeFormatter.string(from: quote.fetchedAt))")
+			switch freshness(of: quote) {
+			case .live: break
+			case .closed: lines.append("Market closed. WTI trades Sunday 6 PM to Friday 5 PM New York time, with a 5–6 PM break on weekdays.")
+			case .stale: lines.append("⚠︎ No new quote in over \(Int(Freshness.maxAge / 60)) minutes while the market is open.")
+			}
+			if let relayFailure = quote.relayFailure {
+				lines.append("⚠︎ \(relayFailure)")
+			}
 		} else {
 			lines.append("No price fetched yet.")
 		}
@@ -187,13 +219,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 
 	private func shortReason(_ error: PriceFetchError) -> String {
 		switch error {
-		case .badURL: return "bad URL"
 		case .transport: return "network"
 		case .http(_, let status): return "HTTP \(status)"
 		case .emptyBody: return "empty response"
 		case .malformed: return "bad response"
-		case .feedError: return "feed error"
-		case .allSourcesFailed: return "all sources down"
+		case .relayHasNoQuote: return "relay has no price"
 		}
 	}
 
@@ -201,6 +231,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 		let formatter = DateFormatter()
 		formatter.dateStyle = .none
 		formatter.timeStyle = .medium
+		return formatter
+	}()
+
+	/// "Fri 4:59 PM": a closed or stale quote can be days old, so it needs the day.
+	private static let dateTimeFormatter: DateFormatter = {
+		let formatter = DateFormatter()
+		formatter.setLocalizedDateFormatFromTemplate("EEE h:mm a")
 		return formatter
 	}()
 
